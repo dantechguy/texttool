@@ -1,8 +1,4 @@
 import shutil
-# second attempt:
-# use separator indexes to calculate where to wrap
-# dont shorten content string, just change starting index
-# append sublines to list, join?
 
 def wrap_text(
         text,
