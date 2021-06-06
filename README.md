@@ -1,8 +1,12 @@
 # textwrapper
 
-Function signature
+## Installation
+
+`pip install texttool`
+
+## Function signature
 ```py
-def wrap_text(
+def wrap(
         # the text to wrap
         text,
         
@@ -24,4 +28,22 @@ def wrap_text(
         # string of characters, in priority order, to wrap on
         delimiters=' ,.!',
         ):
+```
+
+## Usage
+
+```py
+import texttool
+
+texttool.wrap('Lorem ipsum dolor sit amet.', max_width=6)
+```
+
+```
+Hi
+there,
+ nice
+to
+foo
+your
+bar.
 ```
